@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwg-rq-hTy">
+                    <rect key="frame" x="146" y="318" width="83" height="30"/>
+                    <color key="backgroundColor" red="0.26089303194285712" green="0.66870877748571433" blue="0.77698102678571423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="创建钱包">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="createAction:" destination="-1" eventType="touchUpInside" id="YH7-BE-THX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6b-73-sl7">
+                    <rect key="frame" x="146" y="372" width="83" height="30"/>
+                    <color key="backgroundColor" red="0.26089303190000002" green="0.66870877750000002" blue="0.77698102680000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="导入钱包">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="importAction:" destination="-1" eventType="touchUpInside" id="MPP-TR-Hbb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gwg-rq-hTy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Y2-Q0-PbR"/>
+                <constraint firstItem="gwg-rq-hTy" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-0.5" id="IvV-rE-Blv"/>
+                <constraint firstItem="F6b-73-sl7" firstAttribute="top" secondItem="gwg-rq-hTy" secondAttribute="bottom" constant="24" id="QLU-BI-SK0"/>
+                <constraint firstItem="F6b-73-sl7" firstAttribute="centerX" secondItem="gwg-rq-hTy" secondAttribute="centerX" id="Y8o-KP-g1J"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

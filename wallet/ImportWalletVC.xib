@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImportWalletVC">
+            <connections>
+                <outlet property="keyStoreBtn" destination="JF2-Dk-MoR" id="hkU-Jr-5xF"/>
+                <outlet property="mnemonicsBtn" destination="SFz-z5-DAm" id="Nv5-SV-kaj"/>
+                <outlet property="privateBtn" destination="2Lv-ht-bnm" id="whZ-tp-CAT"/>
+                <outlet property="scrollView" destination="Ofx-Vj-0eH" id="EDU-uf-bU9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFz-z5-DAm">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="助记词">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.26089303190000002" green="0.66870877750000002" blue="0.77698102680000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="action1:" destination="-1" eventType="touchUpInside" id="6p5-XB-lgN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JF2-Dk-MoR">
+                    <rect key="frame" x="125" y="0.0" width="125" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="bgV-Ks-ZPL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="官方钱包">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" title="官方钱包">
+                        <color key="titleColor" red="0.26089303190000002" green="0.66870877750000002" blue="0.77698102680000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="action2:" destination="-1" eventType="touchUpInside" id="MDf-G6-1v9"/>
+                    </connections>
+                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofx-Vj-0eH">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lv-ht-bnm">
+                    <rect key="frame" x="250" y="0.0" width="125" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="私钥">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.26089303190000002" green="0.66870877750000002" blue="0.77698102680000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="action3:" destination="-1" eventType="touchUpInside" id="7qF-o3-5L4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Ofx-Vj-0eH" secondAttribute="bottom" id="1qW-DL-wWz"/>
+                <constraint firstItem="JF2-Dk-MoR" firstAttribute="leading" secondItem="SFz-z5-DAm" secondAttribute="trailing" id="5Pz-DP-Obh"/>
+                <constraint firstItem="JF2-Dk-MoR" firstAttribute="centerY" secondItem="SFz-z5-DAm" secondAttribute="centerY" id="6bM-51-oVx"/>
+                <constraint firstItem="JF2-Dk-MoR" firstAttribute="height" secondItem="SFz-z5-DAm" secondAttribute="height" id="Dkf-SU-MSg"/>
+                <constraint firstItem="2Lv-ht-bnm" firstAttribute="width" secondItem="JF2-Dk-MoR" secondAttribute="width" id="KFL-n4-XvL"/>
+                <constraint firstItem="2Lv-ht-bnm" firstAttribute="centerY" secondItem="JF2-Dk-MoR" secondAttribute="centerY" id="SBA-ue-VFw"/>
+                <constraint firstItem="2Lv-ht-bnm" firstAttribute="height" secondItem="JF2-Dk-MoR" secondAttribute="height" id="Scr-U2-FQT"/>
+                <constraint firstItem="2Lv-ht-bnm" firstAttribute="leading" secondItem="JF2-Dk-MoR" secondAttribute="trailing" id="XjM-5J-WFq"/>
+                <constraint firstItem="JF2-Dk-MoR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dgS-bi-rOY"/>
+                <constraint firstItem="Ofx-Vj-0eH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eL7-B0-hQ4"/>
+                <constraint firstAttribute="trailing" secondItem="2Lv-ht-bnm" secondAttribute="trailing" id="eNa-R7-TET"/>
+                <constraint firstItem="Ofx-Vj-0eH" firstAttribute="top" secondItem="SFz-z5-DAm" secondAttribute="bottom" id="qma-Dv-SaA"/>
+                <constraint firstItem="JF2-Dk-MoR" firstAttribute="width" secondItem="SFz-z5-DAm" secondAttribute="width" id="sO4-Ao-H48"/>
+                <constraint firstAttribute="trailing" secondItem="Ofx-Vj-0eH" secondAttribute="trailing" id="uqy-zz-psa"/>
+                <constraint firstItem="SFz-z5-DAm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xVj-mk-bOF"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

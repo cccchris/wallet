@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F374C3AA62576779F78A8997 /* libPods-wallet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3B384FA7502C09954747997 /* libPods-wallet.a */; };
+		F82793A720D1F7CE00F04FD4 /* CreateWalletVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793A520D1F7CE00F04FD4 /* CreateWalletVC.m */; };
+		F82793A820D1F7CE00F04FD4 /* CreateWalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82793A620D1F7CE00F04FD4 /* CreateWalletVC.xib */; };
+		F82793AC20D1FD7000F04FD4 /* WalletInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793AB20D1FD7000F04FD4 /* WalletInfoModel.m */; };
+		F82793AF20D1FE6C00F04FD4 /* WalletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793AE20D1FE6C00F04FD4 /* WalletManager.m */; };
+		F82793B220D2168000F04FD4 /* CurrentWalletHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793B120D2168000F04FD4 /* CurrentWalletHandle.m */; };
+		F82793B620D2489A00F04FD4 /* MnemonicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793B420D2489A00F04FD4 /* MnemonicVC.m */; };
+		F82793B720D2489A00F04FD4 /* MnemonicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82793B520D2489A00F04FD4 /* MnemonicVC.xib */; };
+		F82793BB20D2523800F04FD4 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793B920D2523800F04FD4 /* HomeVC.m */; };
+		F82793BC20D2523800F04FD4 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82793BA20D2523800F04FD4 /* HomeVC.xib */; };
+		F82793C920D25C0B00F04FD4 /* BaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793BF20D25C0B00F04FD4 /* BaseNavViewController.m */; };
+		F82793CA20D25C0B00F04FD4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793C120D25C0B00F04FD4 /* BaseViewController.m */; };
+		F82793CB20D25C0B00F04FD4 /* ErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793C320D25C0B00F04FD4 /* ErrorView.m */; };
+		F82793CC20D25C0B00F04FD4 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793C520D25C0B00F04FD4 /* MainTabBarController.m */; };
+		F82793CD20D25C0B00F04FD4 /* MainTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793C720D25C0B00F04FD4 /* MainTabBarItem.m */; };
+		F82793CE20D25C0B00F04FD4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F82793C820D25C0B00F04FD4 /* README.md */; };
+		F82793D220D25C3000F04FD4 /* MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793D020D25C3000F04FD4 /* MineVC.m */; };
+		F82793D320D25C3000F04FD4 /* MineVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82793D120D25C3000F04FD4 /* MineVC.xib */; };
+		F82793D720D2634400F04FD4 /* ImportWalletVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F82793D520D2634400F04FD4 /* ImportWalletVC.m */; };
+		F82793D820D2634400F04FD4 /* ImportWalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F82793D620D2634400F04FD4 /* ImportWalletVC.xib */; };
+		F82FED7D20EB12BB0045917D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F82FED7220EB12BB0045917D /* README.md */; };
+		F82FED7E20EB12BB0045917D /* UIButton+XYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F82FED7420EB12BB0045917D /* UIButton+XYButton.m */; };
+		F82FED7F20EB12BB0045917D /* UICollectionView+IndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F82FED7620EB12BB0045917D /* UICollectionView+IndexPath.m */; };
+		F82FED8020EB12BB0045917D /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F82FED7820EB12BB0045917D /* UIColor+Extend.m */; };
+		F82FED8120EB12BB0045917D /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = F82FED7A20EB12BB0045917D /* UIView+Extend.m */; };
+		F82FED8220EB12BB0045917D /* UIViewController+AlertViewAndActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = F82FED7C20EB12BB0045917D /* UIViewController+AlertViewAndActionSheet.m */; };
+		F834C9C920D0A53C00E27C00 /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F834C9C720D0A53C00E27C00 /* FirstVC.m */; };
+		F834C9CA20D0A53C00E27C00 /* FirstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F834C9C820D0A53C00E27C00 /* FirstVC.xib */; };
+		F8417EC220CF50100090040A /* MnemonicView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8417EC120CF50100090040A /* MnemonicView.m */; };
+		F8417EC620CF674C0090040A /* BackUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8417EC420CF674C0090040A /* BackUpViewController.m */; };
+		F8417EC720CF674C0090040A /* BackUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8417EC520CF674C0090040A /* BackUpViewController.xib */; };
+		F8417FEE20CFBBAC0090040A /* ethers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8417FE920CFBBAC0090040A /* ethers.framework */; };
+		F8417FEF20CFBBAC0090040A /* hsether.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8417FEA20CFBBAC0090040A /* hsether.a */; };
+		F861473820CE66AC009A67C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F861473720CE66AC009A67C3 /* AppDelegate.m */; };
+		F861474020CE66AD009A67C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F861473F20CE66AD009A67C3 /* Assets.xcassets */; };
+		F861474320CE66AD009A67C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F861474120CE66AD009A67C3 /* LaunchScreen.storyboard */; };
+		F861474620CE66AD009A67C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F861474520CE66AD009A67C3 /* main.m */; };
+		F861475020CE66AD009A67C3 /* walletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F861474F20CE66AD009A67C3 /* walletTests.m */; };
+		F861475B20CE66AD009A67C3 /* walletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F861475A20CE66AD009A67C3 /* walletUITests.m */; };
+		F8F7C5B320E2200A001A2D80 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F7C5B220E2200A001A2D80 /* SliderView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F861474C20CE66AD009A67C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F861472B20CE66AC009A67C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F861473220CE66AC009A67C3;
+			remoteInfo = wallet;
+		};
+		F861475720CE66AD009A67C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F861472B20CE66AC009A67C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F861473220CE66AC009A67C3;
+			remoteInfo = wallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3B384FA7502C09954747997 /* libPods-wallet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wallet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23147AA205E989B3497451A /* Pods-wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wallet/Pods-wallet.debug.xcconfig"; sourceTree = "<group>"; };
+		BBC8EF5C7B0EB8B9EF685C8E /* Pods-wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-wallet/Pods-wallet.release.xcconfig"; sourceTree = "<group>"; };
+		F82793A420D1F7CE00F04FD4 /* CreateWalletVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateWalletVC.h; sourceTree = "<group>"; };
+		F82793A520D1F7CE00F04FD4 /* CreateWalletVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateWalletVC.m; sourceTree = "<group>"; };
+		F82793A620D1F7CE00F04FD4 /* CreateWalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateWalletVC.xib; sourceTree = "<group>"; };
+		F82793A920D1F97300F04FD4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F82793AA20D1FD7000F04FD4 /* WalletInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletInfoModel.h; sourceTree = "<group>"; };
+		F82793AB20D1FD7000F04FD4 /* WalletInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletInfoModel.m; sourceTree = "<group>"; };
+		F82793AD20D1FE6C00F04FD4 /* WalletManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletManager.h; sourceTree = "<group>"; };
+		F82793AE20D1FE6C00F04FD4 /* WalletManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletManager.m; sourceTree = "<group>"; };
+		F82793B020D2168000F04FD4 /* CurrentWalletHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentWalletHandle.h; sourceTree = "<group>"; };
+		F82793B120D2168000F04FD4 /* CurrentWalletHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentWalletHandle.m; sourceTree = "<group>"; };
+		F82793B320D2489A00F04FD4 /* MnemonicVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicVC.h; sourceTree = "<group>"; };
+		F82793B420D2489A00F04FD4 /* MnemonicVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MnemonicVC.m; sourceTree = "<group>"; };
+		F82793B520D2489A00F04FD4 /* MnemonicVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MnemonicVC.xib; sourceTree = "<group>"; };
+		F82793B820D2523800F04FD4 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		F82793B920D2523800F04FD4 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		F82793BA20D2523800F04FD4 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		F82793BE20D25C0B00F04FD4 /* BaseNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavViewController.h; sourceTree = "<group>"; };
+		F82793BF20D25C0B00F04FD4 /* BaseNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavViewController.m; sourceTree = "<group>"; };
+		F82793C020D25C0B00F04FD4 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F82793C120D25C0B00F04FD4 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F82793C220D25C0B00F04FD4 /* ErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorView.h; sourceTree = "<group>"; };
+		F82793C320D25C0B00F04FD4 /* ErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorView.m; sourceTree = "<group>"; };
+		F82793C420D25C0B00F04FD4 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		F82793C520D25C0B00F04FD4 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		F82793C620D25C0B00F04FD4 /* MainTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarItem.h; sourceTree = "<group>"; };
+		F82793C720D25C0B00F04FD4 /* MainTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarItem.m; sourceTree = "<group>"; };
+		F82793C820D25C0B00F04FD4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F82793CF20D25C3000F04FD4 /* MineVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineVC.h; sourceTree = "<group>"; };
+		F82793D020D25C3000F04FD4 /* MineVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineVC.m; sourceTree = "<group>"; };
+		F82793D120D25C3000F04FD4 /* MineVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineVC.xib; sourceTree = "<group>"; };
+		F82793D420D2634400F04FD4 /* ImportWalletVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImportWalletVC.h; sourceTree = "<group>"; };
+		F82793D520D2634400F04FD4 /* ImportWalletVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImportWalletVC.m; sourceTree = "<group>"; };
+		F82793D620D2634400F04FD4 /* ImportWalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImportWalletVC.xib; sourceTree = "<group>"; };
+		F82FED7220EB12BB0045917D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F82FED7320EB12BB0045917D /* UIButton+XYButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XYButton.h"; sourceTree = "<group>"; };
+		F82FED7420EB12BB0045917D /* UIButton+XYButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XYButton.m"; sourceTree = "<group>"; };
+		F82FED7520EB12BB0045917D /* UICollectionView+IndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+IndexPath.h"; sourceTree = "<group>"; };
+		F82FED7620EB12BB0045917D /* UICollectionView+IndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+IndexPath.m"; sourceTree = "<group>"; };
+		F82FED7720EB12BB0045917D /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extend.h"; sourceTree = "<group>"; };
+		F82FED7820EB12BB0045917D /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extend.m"; sourceTree = "<group>"; };
+		F82FED7920EB12BB0045917D /* UIView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
+		F82FED7A20EB12BB0045917D /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
+		F82FED7B20EB12BB0045917D /* UIViewController+AlertViewAndActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AlertViewAndActionSheet.h"; sourceTree = "<group>"; };
+		F82FED7C20EB12BB0045917D /* UIViewController+AlertViewAndActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AlertViewAndActionSheet.m"; sourceTree = "<group>"; };
+		F834C9C620D0A53C00E27C00 /* FirstVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
+		F834C9C720D0A53C00E27C00 /* FirstVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
+		F834C9C820D0A53C00E27C00 /* FirstVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstVC.xib; sourceTree = "<group>"; };
+		F8417EC020CF50100090040A /* MnemonicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicView.h; sourceTree = "<group>"; };
+		F8417EC120CF50100090040A /* MnemonicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MnemonicView.m; sourceTree = "<group>"; };
+		F8417EC320CF674C0090040A /* BackUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackUpViewController.h; sourceTree = "<group>"; };
+		F8417EC420CF674C0090040A /* BackUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackUpViewController.m; sourceTree = "<group>"; };
+		F8417EC520CF674C0090040A /* BackUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackUpViewController.xib; sourceTree = "<group>"; };
+		F8417FE920CFBBAC0090040A /* ethers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ethers.framework; sourceTree = "<group>"; };
+		F8417FEA20CFBBAC0090040A /* hsether.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = hsether.a; sourceTree = "<group>"; };
+		F8417FED20CFBBAC0090040A /* HSEther.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSEther.h; sourceTree = "<group>"; };
+		F861473320CE66AC009A67C3 /* wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F861473620CE66AC009A67C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F861473720CE66AC009A67C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F861473F20CE66AD009A67C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F861474220CE66AD009A67C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F861474420CE66AD009A67C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F861474520CE66AD009A67C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F861474B20CE66AD009A67C3 /* walletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F861474F20CE66AD009A67C3 /* walletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = walletTests.m; sourceTree = "<group>"; };
+		F861475120CE66AD009A67C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F861475620CE66AD009A67C3 /* walletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = walletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F861475A20CE66AD009A67C3 /* walletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = walletUITests.m; sourceTree = "<group>"; };
+		F861475C20CE66AD009A67C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8F7C5B120E2200A001A2D80 /* SliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderView.h; sourceTree = "<group>"; };
+		F8F7C5B220E2200A001A2D80 /* SliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F861473020CE66AC009A67C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8417FEE20CFBBAC0090040A /* ethers.framework in Frameworks */,
+				F8417FEF20CFBBAC0090040A /* hsether.a in Frameworks */,
+				F374C3AA62576779F78A8997 /* libPods-wallet.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F861474820CE66AD009A67C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F861475320CE66AD009A67C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8A139038AE541DDBC911D7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3B384FA7502C09954747997 /* libPods-wallet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F82793BD20D25C0B00F04FD4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F82793BE20D25C0B00F04FD4 /* BaseNavViewController.h */,
+				F82793BF20D25C0B00F04FD4 /* BaseNavViewController.m */,
+				F82793C020D25C0B00F04FD4 /* BaseViewController.h */,
+				F82793C120D25C0B00F04FD4 /* BaseViewController.m */,
+				F82793C220D25C0B00F04FD4 /* ErrorView.h */,
+				F82793C320D25C0B00F04FD4 /* ErrorView.m */,
+				F82793C420D25C0B00F04FD4 /* MainTabBarController.h */,
+				F82793C520D25C0B00F04FD4 /* MainTabBarController.m */,
+				F82793C620D25C0B00F04FD4 /* MainTabBarItem.h */,
+				F82793C720D25C0B00F04FD4 /* MainTabBarItem.m */,
+				F82793C820D25C0B00F04FD4 /* README.md */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F82FED7120EB12BB0045917D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F82FED7220EB12BB0045917D /* README.md */,
+				F82FED7320EB12BB0045917D /* UIButton+XYButton.h */,
+				F82FED7420EB12BB0045917D /* UIButton+XYButton.m */,
+				F82FED7520EB12BB0045917D /* UICollectionView+IndexPath.h */,
+				F82FED7620EB12BB0045917D /* UICollectionView+IndexPath.m */,
+				F82FED7720EB12BB0045917D /* UIColor+Extend.h */,
+				F82FED7820EB12BB0045917D /* UIColor+Extend.m */,
+				F82FED7920EB12BB0045917D /* UIView+Extend.h */,
+				F82FED7A20EB12BB0045917D /* UIView+Extend.m */,
+				F82FED7B20EB12BB0045917D /* UIViewController+AlertViewAndActionSheet.h */,
+				F82FED7C20EB12BB0045917D /* UIViewController+AlertViewAndActionSheet.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F8417FE820CFBBAC0090040A /* libEther */ = {
+			isa = PBXGroup;
+			children = (
+				F8417FE920CFBBAC0090040A /* ethers.framework */,
+				F8417FEA20CFBBAC0090040A /* hsether.a */,
+				F8417FEB20CFBBAC0090040A /* include */,
+			);
+			path = libEther;
+			sourceTree = "<group>";
+		};
+		F8417FEB20CFBBAC0090040A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F8417FEC20CFBBAC0090040A /* HSEther */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F8417FEC20CFBBAC0090040A /* HSEther */ = {
+			isa = PBXGroup;
+			children = (
+				F8417FED20CFBBAC0090040A /* HSEther.h */,
+			);
+			path = HSEther;
+			sourceTree = "<group>";
+		};
+		F861472A20CE66AC009A67C3 = {
+			isa = PBXGroup;
+			children = (
+				F861473520CE66AC009A67C3 /* wallet */,
+				F861474E20CE66AD009A67C3 /* walletTests */,
+				F861475920CE66AD009A67C3 /* walletUITests */,
+				F861473420CE66AC009A67C3 /* Products */,
+				F8B1BD724997AE21492459BE /* Pods */,
+				C8A139038AE541DDBC911D7F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F861473420CE66AC009A67C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F861473320CE66AC009A67C3 /* wallet.app */,
+				F861474B20CE66AD009A67C3 /* walletTests.xctest */,
+				F861475620CE66AD009A67C3 /* walletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F861473520CE66AC009A67C3 /* wallet */ = {
+			isa = PBXGroup;
+			children = (
+				F82FED7120EB12BB0045917D /* Category */,
+				F8417FE820CFBBAC0090040A /* libEther */,
+				F82793BD20D25C0B00F04FD4 /* Base */,
+				F82793AA20D1FD7000F04FD4 /* WalletInfoModel.h */,
+				F82793AB20D1FD7000F04FD4 /* WalletInfoModel.m */,
+				F82793B020D2168000F04FD4 /* CurrentWalletHandle.h */,
+				F82793B120D2168000F04FD4 /* CurrentWalletHandle.m */,
+				F82793AD20D1FE6C00F04FD4 /* WalletManager.h */,
+				F82793AE20D1FE6C00F04FD4 /* WalletManager.m */,
+				F861473620CE66AC009A67C3 /* AppDelegate.h */,
+				F861473720CE66AC009A67C3 /* AppDelegate.m */,
+				F834C9C620D0A53C00E27C00 /* FirstVC.h */,
+				F834C9C720D0A53C00E27C00 /* FirstVC.m */,
+				F834C9C820D0A53C00E27C00 /* FirstVC.xib */,
+				F82793A420D1F7CE00F04FD4 /* CreateWalletVC.h */,
+				F82793A520D1F7CE00F04FD4 /* CreateWalletVC.m */,
+				F82793A620D1F7CE00F04FD4 /* CreateWalletVC.xib */,
+				F82793D420D2634400F04FD4 /* ImportWalletVC.h */,
+				F82793D520D2634400F04FD4 /* ImportWalletVC.m */,
+				F82793D620D2634400F04FD4 /* ImportWalletVC.xib */,
+				F82793B320D2489A00F04FD4 /* MnemonicVC.h */,
+				F82793B420D2489A00F04FD4 /* MnemonicVC.m */,
+				F82793B520D2489A00F04FD4 /* MnemonicVC.xib */,
+				F8417EC320CF674C0090040A /* BackUpViewController.h */,
+				F8417EC420CF674C0090040A /* BackUpViewController.m */,
+				F8417EC520CF674C0090040A /* BackUpViewController.xib */,
+				F82793B820D2523800F04FD4 /* HomeVC.h */,
+				F82793B920D2523800F04FD4 /* HomeVC.m */,
+				F82793BA20D2523800F04FD4 /* HomeVC.xib */,
+				F82793CF20D25C3000F04FD4 /* MineVC.h */,
+				F82793D020D25C3000F04FD4 /* MineVC.m */,
+				F82793D120D25C3000F04FD4 /* MineVC.xib */,
+				F8417EC020CF50100090040A /* MnemonicView.h */,
+				F8417EC120CF50100090040A /* MnemonicView.m */,
+				F8F7C5B120E2200A001A2D80 /* SliderView.h */,
+				F8F7C5B220E2200A001A2D80 /* SliderView.m */,
+				F82793A920D1F97300F04FD4 /* PrefixHeader.pch */,
+				F861473F20CE66AD009A67C3 /* Assets.xcassets */,
+				F861474120CE66AD009A67C3 /* LaunchScreen.storyboard */,
+				F861474420CE66AD009A67C3 /* Info.plist */,
+				F861474520CE66AD009A67C3 /* main.m */,
+			);
+			path = wallet;
+			sourceTree = "<group>";
+		};
+		F861474E20CE66AD009A67C3 /* walletTests */ = {
+			isa = PBXGroup;
+			children = (
+				F861474F20CE66AD009A67C3 /* walletTests.m */,
+				F861475120CE66AD009A67C3 /* Info.plist */,
+			);
+			path = walletTests;
+			sourceTree = "<group>";
+		};
+		F861475920CE66AD009A67C3 /* walletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F861475A20CE66AD009A67C3 /* walletUITests.m */,
+				F861475C20CE66AD009A67C3 /* Info.plist */,
+			);
+			path = walletUITests;
+			sourceTree = "<group>";
+		};
+		F8B1BD724997AE21492459BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B23147AA205E989B3497451A /* Pods-wallet.debug.xcconfig */,
+				BBC8EF5C7B0EB8B9EF685C8E /* Pods-wallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F861473220CE66AC009A67C3 /* wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F861475F20CE66AD009A67C3 /* Build configuration list for PBXNativeTarget "wallet" */;
+			buildPhases = (
+				A28C00EBEF0A20F817EAD5EE /* [CP] Check Pods Manifest.lock */,
+				F861472F20CE66AC009A67C3 /* Sources */,
+				F861473020CE66AC009A67C3 /* Frameworks */,
+				F861473120CE66AC009A67C3 /* Resources */,
+				589C3D2D0E346B7776BB7F01 /* [CP] Embed Pods Frameworks */,
+				969A8A6A03E27B7AE2BDEF50 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wallet;
+			productName = wallet;
+			productReference = F861473320CE66AC009A67C3 /* wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F861474A20CE66AD009A67C3 /* walletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F861476220CE66AD009A67C3 /* Build configuration list for PBXNativeTarget "walletTests" */;
+			buildPhases = (
+				F861474720CE66AD009A67C3 /* Sources */,
+				F861474820CE66AD009A67C3 /* Frameworks */,
+				F861474920CE66AD009A67C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F861474D20CE66AD009A67C3 /* PBXTargetDependency */,
+			);
+			name = walletTests;
+			productName = walletTests;
+			productReference = F861474B20CE66AD009A67C3 /* walletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F861475520CE66AD009A67C3 /* walletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F861476520CE66AD009A67C3 /* Build configuration list for PBXNativeTarget "walletUITests" */;
+			buildPhases = (
+				F861475220CE66AD009A67C3 /* Sources */,
+				F861475320CE66AD009A67C3 /* Frameworks */,
+				F861475420CE66AD009A67C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F861475820CE66AD009A67C3 /* PBXTargetDependency */,
+			);
+			name = walletUITests;
+			productName = walletUITests;
+			productReference = F861475620CE66AD009A67C3 /* walletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F861472B20CE66AC009A67C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = wyChirs;
+				TargetAttributes = {
+					F861473220CE66AC009A67C3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					F861474A20CE66AD009A67C3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F861473220CE66AC009A67C3;
+					};
+					F861475520CE66AD009A67C3 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F861473220CE66AC009A67C3;
+					};
+				};
+			};
+			buildConfigurationList = F861472E20CE66AC009A67C3 /* Build configuration list for PBXProject "wallet" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F861472A20CE66AC009A67C3;
+			productRefGroup = F861473420CE66AC009A67C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F861473220CE66AC009A67C3 /* wallet */,
+				F861474A20CE66AD009A67C3 /* walletTests */,
+				F861475520CE66AD009A67C3 /* walletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F861473120CE66AC009A67C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82793D820D2634400F04FD4 /* ImportWalletVC.xib in Resources */,
+				F861474320CE66AD009A67C3 /* LaunchScreen.storyboard in Resources */,
+				F861474020CE66AD009A67C3 /* Assets.xcassets in Resources */,
+				F8417EC720CF674C0090040A /* BackUpViewController.xib in Resources */,
+				F82793D320D25C3000F04FD4 /* MineVC.xib in Resources */,
+				F82793B720D2489A00F04FD4 /* MnemonicVC.xib in Resources */,
+				F834C9CA20D0A53C00E27C00 /* FirstVC.xib in Resources */,
+				F82793A820D1F7CE00F04FD4 /* CreateWalletVC.xib in Resources */,
+				F82793CE20D25C0B00F04FD4 /* README.md in Resources */,
+				F82FED7D20EB12BB0045917D /* README.md in Resources */,
+				F82793BC20D2523800F04FD4 /* HomeVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F861474920CE66AD009A67C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F861475420CE66AD009A67C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		589C3D2D0E346B7776BB7F01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wallet/Pods-wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		969A8A6A03E27B7AE2BDEF50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wallet/Pods-wallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A28C00EBEF0A20F817EAD5EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F861472F20CE66AC009A67C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F834C9C920D0A53C00E27C00 /* FirstVC.m in Sources */,
+				F82FED8020EB12BB0045917D /* UIColor+Extend.m in Sources */,
+				F82793AC20D1FD7000F04FD4 /* WalletInfoModel.m in Sources */,
+				F82793B620D2489A00F04FD4 /* MnemonicVC.m in Sources */,
+				F861474620CE66AD009A67C3 /* main.m in Sources */,
+				F82793AF20D1FE6C00F04FD4 /* WalletManager.m in Sources */,
+				F8F7C5B320E2200A001A2D80 /* SliderView.m in Sources */,
+				F82FED7F20EB12BB0045917D /* UICollectionView+IndexPath.m in Sources */,
+				F82793C920D25C0B00F04FD4 /* BaseNavViewController.m in Sources */,
+				F8417EC220CF50100090040A /* MnemonicView.m in Sources */,
+				F82793CB20D25C0B00F04FD4 /* ErrorView.m in Sources */,
+				F82793BB20D2523800F04FD4 /* HomeVC.m in Sources */,
+				F82FED7E20EB12BB0045917D /* UIButton+XYButton.m in Sources */,
+				F82793D220D25C3000F04FD4 /* MineVC.m in Sources */,
+				F861473820CE66AC009A67C3 /* AppDelegate.m in Sources */,
+				F82793CA20D25C0B00F04FD4 /* BaseViewController.m in Sources */,
+				F82793CD20D25C0B00F04FD4 /* MainTabBarItem.m in Sources */,
+				F82793CC20D25C0B00F04FD4 /* MainTabBarController.m in Sources */,
+				F82793D720D2634400F04FD4 /* ImportWalletVC.m in Sources */,
+				F82FED8220EB12BB0045917D /* UIViewController+AlertViewAndActionSheet.m in Sources */,
+				F8417EC620CF674C0090040A /* BackUpViewController.m in Sources */,
+				F82793B220D2168000F04FD4 /* CurrentWalletHandle.m in Sources */,
+				F82FED8120EB12BB0045917D /* UIView+Extend.m in Sources */,
+				F82793A720D1F7CE00F04FD4 /* CreateWalletVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F861474720CE66AD009A67C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F861475020CE66AD009A67C3 /* walletTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F861475220CE66AD009A67C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F861475B20CE66AD009A67C3 /* walletUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F861474D20CE66AD009A67C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F861473220CE66AC009A67C3 /* wallet */;
+			targetProxy = F861474C20CE66AD009A67C3 /* PBXContainerItemProxy */;
+		};
+		F861475820CE66AD009A67C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F861473220CE66AC009A67C3 /* wallet */;
+			targetProxy = F861475720CE66AD009A67C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F861474120CE66AD009A67C3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F861474220CE66AD009A67C3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F861475D20CE66AD009A67C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F861475E20CE66AD009A67C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F861476020CE66AD009A67C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B23147AA205E989B3497451A /* Pods-wallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U32GQ973V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wallet/HSEther/ethers.objc-master",
+					"$(PROJECT_DIR)/wallet/libEther",
+				);
+				GCC_PREFIX_HEADER = /Users/yh/Desktop/wallet/wallet/PrefixHeader.pch;
+				INFOPLIST_FILE = wallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wallet/libEther",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wy.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F861476120CE66AD009A67C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC8EF5C7B0EB8B9EF685C8E /* Pods-wallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8U32GQ973V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wallet/HSEther/ethers.objc-master",
+					"$(PROJECT_DIR)/wallet/libEther",
+				);
+				GCC_PREFIX_HEADER = /Users/yh/Desktop/wallet/wallet/PrefixHeader.pch;
+				INFOPLIST_FILE = wallet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wallet/libEther",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wy.wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F861476320CE66AD009A67C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wy.walletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wallet.app/wallet";
+			};
+			name = Debug;
+		};
+		F861476420CE66AD009A67C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wy.walletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wallet.app/wallet";
+			};
+			name = Release;
+		};
+		F861476620CE66AD009A67C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wy.walletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wallet;
+			};
+			name = Debug;
+		};
+		F861476720CE66AD009A67C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = walletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wy.walletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F861472E20CE66AC009A67C3 /* Build configuration list for PBXProject "wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F861475D20CE66AD009A67C3 /* Debug */,
+				F861475E20CE66AD009A67C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F861475F20CE66AD009A67C3 /* Build configuration list for PBXNativeTarget "wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F861476020CE66AD009A67C3 /* Debug */,
+				F861476120CE66AD009A67C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F861476220CE66AD009A67C3 /* Build configuration list for PBXNativeTarget "walletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F861476320CE66AD009A67C3 /* Debug */,
+				F861476420CE66AD009A67C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F861476520CE66AD009A67C3 /* Build configuration list for PBXNativeTarget "walletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F861476620CE66AD009A67C3 /* Debug */,
+				F861476720CE66AD009A67C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F861472B20CE66AC009A67C3 /* Project object */;
+}

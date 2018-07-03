@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateWalletVC">
+            <connections>
+                <outlet property="pwdtextField" destination="95V-r6-GGI" id="fig-at-Ksz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="walletNametextField" destination="JeH-dI-cEm" id="kAP-TI-2JR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="钱包名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JeH-dI-cEm">
+                    <rect key="frame" x="20" y="100" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nUx-wy-sua"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="钱包密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95V-r6-GGI">
+                    <rect key="frame" x="20" y="160" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="lkq-Wh-PSg"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="xfL-e7-i6N"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYI-rw-bcW">
+                    <rect key="frame" x="137.5" y="254" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.26089303190000002" green="0.66870877750000002" blue="0.77698102680000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="sVq-6P-RhN"/>
+                    </constraints>
+                    <state key="normal" title="创建钱包">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="createAction:" destination="-1" eventType="touchUpInside" id="3W7-PI-Oeb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JeH-dI-cEm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="4Y1-8c-pP0"/>
+                <constraint firstAttribute="trailing" secondItem="95V-r6-GGI" secondAttribute="trailing" constant="20" id="EPt-nF-Byx"/>
+                <constraint firstItem="uYI-rw-bcW" firstAttribute="top" secondItem="95V-r6-GGI" secondAttribute="bottom" constant="54" id="Lwp-eL-ufZ"/>
+                <constraint firstItem="95V-r6-GGI" firstAttribute="top" secondItem="JeH-dI-cEm" secondAttribute="bottom" constant="20" id="Z1A-r6-InP"/>
+                <constraint firstItem="uYI-rw-bcW" firstAttribute="centerX" secondItem="95V-r6-GGI" secondAttribute="centerX" id="aSO-C7-40G"/>
+                <constraint firstItem="JeH-dI-cEm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="clR-g3-7H4"/>
+                <constraint firstAttribute="trailing" secondItem="JeH-dI-cEm" secondAttribute="trailing" constant="20" id="eNE-ZJ-7LL"/>
+                <constraint firstItem="95V-r6-GGI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="xT1-s5-ucd"/>
+            </constraints>
+            <point key="canvasLocation" x="15" y="46"/>
+        </view>
+    </objects>
+</document>
